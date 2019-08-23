@@ -16,12 +16,12 @@ function calculatesFarePrice(street1, street2){
 		return 0
 	}
 	else if (distance <= 2000) {
-		return (distance - 400) * 2
+		return (distance - 400) * 0.02
 	}
 	else if (distance <= 2500) {
 		return 25
 	}
 	else {
-		'not allowed!!!!!!'
+		return 'cannot travel that far'
 	}
 }
